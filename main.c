@@ -125,8 +125,6 @@ static Dst dst_ui_from_handler_data(void *data) {
 
 /* Generic handler */
 static int dst_ui_handler(void *data) {
-    if (!data)
-        return 0;
     Dst funcv = dst_ui_from_handler_data(data);
     /* Tuple should already be GC root */
     if (dst_checktype(funcv, DST_FUNCTION)) {
@@ -139,6 +137,9 @@ static int dst_ui_handler(void *data) {
          * a function to call on ui handler errors. */
         int status = dst_continue(fiber, in, &out);
         dst_gcunroot(dst_wrap_fiber(fiber));
+        if (status) {
+            dst_puts(dst_formatc("dst error: %S\n", dst_to_string(out)));
+        }
         return status;
     } else if (dst_checktype(funcv, DST_CFUNCTION)) {
         Dst ret;
