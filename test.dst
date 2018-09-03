@@ -36,7 +36,7 @@
   (ui.box.append box cbox)
 
   (ui.button.on-clicked b (fn [] (ui.open-file w)))
-  (ui.entry.on-changed en (fn [] (print "Entry value: " (ui.entry.text en))))
+  #(ui.entry.on-changed en (fn [] (print "Entry value: " (ui.entry.text en))))
 
   (ui.show w))
 

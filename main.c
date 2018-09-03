@@ -125,6 +125,8 @@ static Dst dst_ui_from_handler_data(void *data) {
 
 /* Generic handler */
 static int dst_ui_handler(void *data) {
+    if (!data)
+        return 0;
     Dst funcv = dst_ui_from_handler_data(data);
     /* Tuple should already be GC root */
     if (dst_checktype(funcv, DST_FUNCTION)) {
@@ -1421,7 +1423,7 @@ static const DstReg cfuns[] = {
 };
 
 DST_MODULE_ENTRY(DstArgs args) {
-    DstTable *env = dst_env_arg(args);
-    dst_env_cfuns(env, cfuns);
+    DstTable *env = dst_env(args);
+    dst_cfuns(env, "ui", cfuns);
     return 0;
 }
