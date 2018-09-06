@@ -1,3 +1,3 @@
-# dstui
+# janetui
 
-Bindings for [libui](https://github.com/andlabs/libui) to the [dst](https://github.com/bakpakin/dst) programming language.
+Bindings for [libui](https://github.com/andlabs/libui) to the [janet](https://github.com/bakpakin/janet) programming language.
