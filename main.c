@@ -1309,72 +1309,72 @@ static const JanetReg cfuns[] = {
 
     /* Window */
     {"window", janet_ui_window, NULL},
-    {"window.title", janet_ui_window_title, NULL},
-    {"window.content-size", janet_ui_window_content_size, NULL},
-    {"window.fullscreen", janet_ui_window_fullscreen, NULL},
-    {"window.on-content-size-changed", janet_ui_window_on_content_size_changed, NULL},
-    {"window.on-closing", janet_ui_window_on_closing, NULL},
-    {"window.set-child", janet_ui_window_set_child, NULL},
-    {"window.borderless", janet_ui_window_borderless, NULL},
-    {"window.margined", janet_ui_window_margined, NULL},
+    {"window/title", janet_ui_window_title, NULL},
+    {"window/content-size", janet_ui_window_content_size, NULL},
+    {"window/fullscreen", janet_ui_window_fullscreen, NULL},
+    {"window/on-content-size-changed", janet_ui_window_on_content_size_changed, NULL},
+    {"window/on-closing", janet_ui_window_on_closing, NULL},
+    {"window/set-child", janet_ui_window_set_child, NULL},
+    {"window/borderless", janet_ui_window_borderless, NULL},
+    {"window/margined", janet_ui_window_margined, NULL},
 
     /* Button */
     {"button", janet_ui_button, NULL},
-    {"button.text", janet_ui_button_text, NULL},
-    {"button.on-clicked", janet_ui_button_on_clicked, NULL},
+    {"button/text", janet_ui_button_text, NULL},
+    {"button/on-clicked", janet_ui_button_on_clicked, NULL},
 
     /* Box */
     {"vertical-box", janet_ui_vertical_box, NULL},
     {"horizontal-box", janet_ui_horizontal_box, NULL},
-    {"box.padded", janet_ui_box_padded, NULL},
-    {"box.append", janet_ui_box_append, NULL},
-    {"box.delete", janet_ui_box_delete, NULL},
+    {"box/padded", janet_ui_box_padded, NULL},
+    {"box/append", janet_ui_box_append, NULL},
+    {"box/delete", janet_ui_box_delete, NULL},
 
     /* Check box */
     {"checkbox", janet_ui_checkbox, NULL},
-    {"checkbox.on-toggled", janet_ui_checkbox_on_toggled, NULL},
-    {"checkbox.text", janet_ui_checkbox_text, NULL},
-    {"checkbox.checked", janet_ui_checkbox_checked, NULL},
+    {"checkbox/on-toggled", janet_ui_checkbox_on_toggled, NULL},
+    {"checkbox/text", janet_ui_checkbox_text, NULL},
+    {"checkbox/checked", janet_ui_checkbox_checked, NULL},
 
     /* Entry */
     {"entry", janet_ui_entry, NULL},
     {"password-entry", janet_ui_password_entry, NULL},
     {"search-entry", janet_ui_search_entry, NULL},
-    {"entry.text", janet_ui_entry_text, NULL},
-    {"entry.read-only", janet_ui_entry_read_only, NULL},
-    {"entry.on-changed", janet_ui_entry_on_changed, NULL},
+    {"entry/text", janet_ui_entry_text, NULL},
+    {"entry/read-only", janet_ui_entry_read_only, NULL},
+    {"entry/on-changed", janet_ui_entry_on_changed, NULL},
 
     /* Label */
     {"label", janet_ui_label, NULL},
-    {"label.text", janet_ui_label_text, NULL},
+    {"label/text", janet_ui_label_text, NULL},
 
     /* Tab */
     {"tab", janet_ui_tab, NULL},
-    {"tab.margined", janet_ui_tab_margined, NULL},
-    {"tab.num-pages", janet_ui_tab_num_pages, NULL},
-    {"tab.append", janet_ui_tab_append, NULL},
-    {"tab.insert-at", janet_ui_tab_insert_at, NULL},
-    {"tab.delete", janet_ui_tab_delete, NULL},
+    {"tab/margined", janet_ui_tab_margined, NULL},
+    {"tab/num-pages", janet_ui_tab_num_pages, NULL},
+    {"tab/append", janet_ui_tab_append, NULL},
+    {"tab/insert-at", janet_ui_tab_insert_at, NULL},
+    {"tab/delete", janet_ui_tab_delete, NULL},
 
     /* Group */
     {"group", janet_ui_group, NULL},
-    {"group.title", janet_ui_group_title, NULL},
-    {"group.margined", janet_ui_group_margined, NULL},
-    {"group.set-child", janet_ui_group_set_child, NULL},
+    {"group/title", janet_ui_group_title, NULL},
+    {"group/margined", janet_ui_group_margined, NULL},
+    {"group/set-child", janet_ui_group_set_child, NULL},
 
     /* Spinbox */
     {"spinbox", janet_ui_spinbox, NULL},
-    {"spinbox.value", janet_ui_spinbox_value, NULL},
-    {"spinbox.on-changed", janet_ui_spinbox_on_changed, NULL},
+    {"spinbox/value", janet_ui_spinbox_value, NULL},
+    {"spinbox/on-changed", janet_ui_spinbox_on_changed, NULL},
 
     /* Slider */
     {"slider", janet_ui_slider, NULL},
-    {"slider.value", janet_ui_slider_value, NULL},
-    {"slider.on-changed", janet_ui_slider_on_changed, NULL},
+    {"slider/value", janet_ui_slider_value, NULL},
+    {"slider/on-changed", janet_ui_slider_on_changed, NULL},
 
     /* Progress Bar */
     {"progress-bar", janet_ui_progress_bar, NULL},
-    {"progress-bar.value", janet_ui_progress_bar_value, NULL},
+    {"progress-bar/value", janet_ui_progress_bar_value, NULL},
 
     /* Separator */
     {"horizontal-separator", janet_ui_horizontal_separator, NULL},
@@ -1382,43 +1382,43 @@ static const JanetReg cfuns[] = {
 
     /* Combobox */
     {"combobox", janet_ui_combobox, NULL},
-    {"combobox.append", janet_ui_combobox_append, NULL},
-    {"combobox.selected", janet_ui_combobox_selected, NULL},
-    {"combobox.on-selected", janet_ui_combobox_on_selected, NULL},
+    {"combobox/append", janet_ui_combobox_append, NULL},
+    {"combobox/selected", janet_ui_combobox_selected, NULL},
+    {"combobox/on-selected", janet_ui_combobox_on_selected, NULL},
 
     /* Editable Combobox */
     {"editable-combobox", janet_ui_editable_combobox, NULL},
-    {"editable-combobox.text", janet_ui_editable_combobox_text, NULL},
-    {"editable-combobox.append", janet_ui_editable_combobox_append, NULL},
-    {"editable-combobox.on-changed", janet_ui_editable_combobox_on_changed, NULL},
+    {"editable-combobox/text", janet_ui_editable_combobox_text, NULL},
+    {"editable-combobox/append", janet_ui_editable_combobox_append, NULL},
+    {"editable-combobox/on-changed", janet_ui_editable_combobox_on_changed, NULL},
 
     /* Radio Buttons */
     {"radio-buttons", janet_ui_radio_buttons, NULL},
-    {"radio-buttons.append", janet_ui_radio_buttons_append, NULL},
-    {"radio-buttons.selected", janet_ui_radio_buttons_selected, NULL},
-    {"radio-buttons.on-selected", janet_ui_radio_buttons_on_selected, NULL},
+    {"radio-buttons/append", janet_ui_radio_buttons_append, NULL},
+    {"radio-buttons/selected", janet_ui_radio_buttons_selected, NULL},
+    {"radio-buttons/on-selected", janet_ui_radio_buttons_on_selected, NULL},
 
     /* Multiline Entry */
     {"multiline-entry", janet_ui_multiline_entry, NULL},
-    {"multiline-entry.text", janet_ui_multiline_entry_text, NULL},
-    {"multiline-entry.read-only", janet_ui_multiline_entry_read_only, NULL},
-    {"multiline-entry.append", janet_ui_multiline_entry_append, NULL},
-    {"multiline-entry.on-changed", janet_ui_multiline_entry_on_changed, NULL},
+    {"multiline-entry/text", janet_ui_multiline_entry_text, NULL},
+    {"multiline-entry/read-only", janet_ui_multiline_entry_read_only, NULL},
+    {"multiline-entry/append", janet_ui_multiline_entry_append, NULL},
+    {"multiline-entry/on-changed", janet_ui_multiline_entry_on_changed, NULL},
 
     /* Menu Item */
-    {"menu-item.enable", janet_ui_menu_item_enable, NULL},
-    {"menu-item.disable", janet_ui_menu_item_disable, NULL},
-    {"menu-item.checked", janet_ui_menu_item_checked, NULL},
-    {"menu-item.on-clicked", janet_ui_menu_item_on_clicked, NULL},
+    {"menu-item/enable", janet_ui_menu_item_enable, NULL},
+    {"menu-item/disable", janet_ui_menu_item_disable, NULL},
+    {"menu-item/checked", janet_ui_menu_item_checked, NULL},
+    {"menu-item/on-clicked", janet_ui_menu_item_on_clicked, NULL},
 
     /* Menu */
     {"menu", janet_ui_menu, NULL},
-    {"menu.append-item", janet_ui_menu_append_item, NULL},
-    {"menu.append-check-item", janet_ui_menu_append_check_item, NULL},
-    {"menu.append-quit-item", janet_ui_menu_append_quit_item, NULL},
-    {"menu.append-about-item", janet_ui_menu_append_about_item, NULL},
-    {"menu.append-preferences-item", janet_ui_menu_append_preferences_item, NULL},
-    {"menu.append-separator", janet_ui_menu_append_separator, NULL},
+    {"menu/append-item", janet_ui_menu_append_item, NULL},
+    {"menu/append-check-item", janet_ui_menu_append_check_item, NULL},
+    {"menu/append-quit-item", janet_ui_menu_append_quit_item, NULL},
+    {"menu/append-about-item", janet_ui_menu_append_about_item, NULL},
+    {"menu/append-preferences-item", janet_ui_menu_append_preferences_item, NULL},
+    {"menu/append-separator", janet_ui_menu_append_separator, NULL},
 
     {NULL, NULL, NULL}
 };
