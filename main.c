@@ -34,26 +34,26 @@ typedef struct {
     uiControl *control;
     uint32_t flags;
 } UIControlWrapper;
-static const JanetAbstractType control_td = {"ui/control", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType window_td = {"ui/window", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType button_td = {"ui/button", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType box_td = {"ui/box", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType checkbox_td = {"ui/checkbox", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType entry_td = {"ui/entry", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType label_td = {"ui/label", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType tab_td = {"ui/tab", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType group_td = {"ui/group", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType spinbox_td = {"ui/spinbox", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType slider_td = {"ui/slider", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType progress_bar_td = {"ui/progress-bar", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType separator_td = {"ui/separator", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType combobox_td = {"ui/combobox", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType editable_combobox_td = {"ui/editable-combobox", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType radio_buttons_td = {"ui/radio-buttons", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType date_time_picker_td = {"ui/date-time-picker", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType multiline_entry_td = {"ui/multiline-entry", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType menu_item_td = {"ui/menu-item", NULL, NULL, NULL, NULL, NULL, NULL};
-static const JanetAbstractType menu_td = {"ui/menu", NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType control_td = {"ui/control", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType window_td = {"ui/window", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType button_td = {"ui/button", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType box_td = {"ui/box", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType checkbox_td = {"ui/checkbox", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType entry_td = {"ui/entry", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType label_td = {"ui/label", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType tab_td = {"ui/tab", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType group_td = {"ui/group", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType spinbox_td = {"ui/spinbox", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType slider_td = {"ui/slider", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType progress_bar_td = {"ui/progress-bar", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType separator_td = {"ui/separator", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType combobox_td = {"ui/combobox", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType editable_combobox_td = {"ui/editable-combobox", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType radio_buttons_td = {"ui/radio-buttons", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType date_time_picker_td = {"ui/date-time-picker", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType multiline_entry_td = {"ui/multiline-entry", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType menu_item_td = {"ui/menu-item", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+static const JanetAbstractType menu_td = {"ui/menu", NULL, NULL, NULL, NULL, NULL, NULL, NULL};
 
 /* Helpers */
 
