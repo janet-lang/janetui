@@ -1,6 +1,6 @@
 #!/usr/bin/env janet
 
-(import build/libjanetui :as ui)
+(import /build/libjanetui :as ui)
 
 (def menu (ui/menu "File"))
 
