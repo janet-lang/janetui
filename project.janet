@@ -6,11 +6,11 @@
 
 (rule "build/janetui.so" ["CMakeLists.txt"]
       (do
-        (os/mkdir "build")
-        (os/cd "build")
-        (os/execute ["cmake" ".."] :p)
         (assert
           (zero?
-            (os/execute ["make"] :p)))))
+            (os/execute ["cmake" "-B" "build"] :p)))
+        (assert
+          (zero?
+            (os/execute ["cmake" "--build" "build"] :p)))))
 
 (add-dep "build" "build/janetui.so")
